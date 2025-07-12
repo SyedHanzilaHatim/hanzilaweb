@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(20, 20, 20);
+    color: yellow;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+nav .logo {
+    font-family: Poppins;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: yellow;
+    font-weight: bolder;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+
+
+}
+.about-me {
+    padding: 80px 0;
+    background-color: #f8f9fa; /* Light gray background */
+  }
+  
+  .about-me .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .about-me .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333; /* Dark gray title color */
+  }
+  
+  .about-me p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555; /* Slightly lighter gray paragraph color */
+}
+nav ul li a {
+    font-family: Poppins;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.25rem;
+    border-radius: 2px;
+    margin-left: 1rem;
+}
+nav ul li a {
+    font-family: Poppins;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.25rem;
+    border-radius: 2px;
+    margin-left: 1rem;
+}
+
+nav ul li a:hover {
+    font-family: Poppins;
+    display: flex;
+    text-decoration: none;
+    color: yellow;
+    border-bottom: 5px solid yellow;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.25rem;
+    border-radius: 2px;
+    margin-left: 1rem;
+}
+
+.picndes {
+    background-image: url('../public/bgpic.png');
+    background-size: contain;
+    /* This will cover the entire element */
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    padding: 4rem;
+    font-weight: bolder;
+
+}
+
+.picndes .head h4 {
+    color: yellow;
+    font-size: xx-large;
+}
+
+.picndes .head h1 {
+    color: yellow;
+    font-size: xx-large;
+
+}
+
+.picndes .head h3 {
+    color: yellow;
+    font-size: xx-large;
+    /* transition: ease-in-out; */
+}
+
+.picndes .but {
+    display: flex;
+    align-items: center;
+    padding-left: 4rem;
+    background-color: transparent;
+
+
+}
+
+.picndes .but .btn {
+    padding: 0.5rem;
+    background-color: yellow;
+    font-weight: bolder;
+    font-size: medium;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+
+}
+
+.picndes .but .btn:hover {
+    background-color: #b4430e;
+
+}
+
+@media (min-width: 460px) {
+    .picndes {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .head {
+        text-align: left;
+    }
+
+    .but {
+        align-self: center;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links.open {
+        transform: translateX(0%);
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .nav-links li:nth-child(1) {
+        transition: opacity 0.2s ease-in-out 0.2s;
+    }
+
+    .nav-links li:nth-child(2) {
+        transition: opacity 0.2s ease-in-out 0.4s;
+    }
+
+    .nav-links li:nth-child(3) {
+        transition: opacity 0.2s ease-in-out 0.6s;
+    }
+
+    .nav-links li {
+        opacity: 1;
+        padding: 40px;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+/* Footer .css */
+/* Footer.css */
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(20, 20, 20);
+    color: yellow;
+    padding: 1rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: yellow;
+}
+
+.footer-links,
+.footer-social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.footer-links a,
+.footer-social a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
+/* Contact.css */
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(20, 20, 20);
+}
+
+.contact-form {
+    background: #1d1c1c;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #dbd5d5;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 900;
+    color: #000;
+}
+
+.contact-form textarea {
+    height: 100px;
+    font-size: large;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background: yellow;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+
+}
+
+.contact-form button:hover {
+    background: #cf0707;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+/* Abou.Css*/
+.about-main{
+    padding: 1rem;
+    
+}
+.about-main .about-des{
+    text-align: center;
+}
+.about-main .tech-used{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
+    font-size: x-large;
+    text-transform: uppercase;
+    color: yellow;
+    padding: 0.5rem;
+}
+.marq_pic{
+    background-repeat: no-repeat;
+    display: flex;
+    gap: 35px;
+    background-color: #cfcece;
+
+}
+.marq_pic img {
+    width: 100px; /* Set your desired width */
+    height: 100px; /* Set your desired height */
+    object-fit: contain; /* Ensures the image is contained within the given width and height without stretching */
+    mix-blend-mode: color-burn;
+
+}
+
+.about-main .about-skills{
+    font-size: medium;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.about-skills h3{
+    color: yellow;
+}
+
